@@ -1,0 +1,37 @@
+.home{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh;
+    padding: 0 50px;
+}
+
+.home .text{
+    width: 550px;
+}
+
+
+.home .text p{
+    font-size: 100px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.home .cv-btn {
+    background-color: rgb(241, 240, 239);
+    opacity : 1;
+    border-radius : 70px;
+    padding: 5px;
+}
+
+.home .cv-btn div{
+    background-color: rgb(255, 255, 254);
+    opacity : 1;
+    border-radius : 90px;
+    padding: 20px 70px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    color: black;
+}
