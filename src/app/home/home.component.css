@@ -1,7 +1,7 @@
 .home{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: end;
     height: 80vh;
     padding: 0 50px;
 }
@@ -19,19 +19,63 @@
 }
 
 .home .cv-btn {
-    background-color: rgb(241, 240, 239);
-    opacity : 1;
+    background-color: transparent;
     border-radius : 70px;
-    padding: 5px;
+    padding: 30px 80px;
+    transition: 0.3s linear;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px rgb(255, 255, 254);
 }
 
-.home .cv-btn div{
-    background-color: rgb(255, 255, 254);
-    opacity : 1;
-    border-radius : 90px;
-    padding: 20px 70px;
+.home .cv-btn p{
     font-size: 30px;
     letter-spacing: 3px;
-    cursor: pointer;
-    color: black;
+    margin: 0 5px;
+}
+
+
+.home .cv-btn span i{
+    font-size: 20px;
+}
+
+
+
+@media (max-width: 900px) { 
+
+    .home{
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 600px) { 
+
+    .home{
+        padding: 0 30px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .home .text{
+        width: 100%;
+        margin: 50px 0;
+    }
+    
+    
+    .home .text p{
+        font-size: 90px;
+    }
+    
+    .home .cv-btn {
+        padding: 20px 60px;
+    }
+    
 }

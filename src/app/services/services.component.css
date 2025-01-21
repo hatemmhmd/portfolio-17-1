@@ -1,0 +1,103 @@
+.services{
+    padding: 50px;
+}
+
+.services .sectionName p{
+    font-size: 55px;
+    letter-spacing: 2px;
+    color: grey;
+    font-weight: bold;
+    position: relative;
+}
+
+.services .sectionName p::after{
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    left: 0;
+}
+
+
+.services .contentServices{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services .contentServices .ui-ux{
+    width: 45%;
+    border-radius: 10px;
+    background-image: url(../../assets/portfolio-single-title-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 0;
+}
+
+.services .contentServices .ui-ux i{
+    font-size: 40px;
+    margin: 20px 0;
+
+}
+
+.services .contentServices .ui-ux .content
+{
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.services .contentServices .ui-ux svg{
+    padding: 20px;
+}
+
+.services .contentServices .ui-ux .content p:nth-child(1)
+{
+    color: #f1cc9f;
+    font-weight: 800;
+    padding: 10px 20px;
+
+}
+
+.services .contentServices .ui-ux .content p:nth-child(2)
+{
+    color: gray;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+
+.services .contentServices .ui-ux .content p
+{
+    margin: 10px 0;
+}
+
+
+
+@media (max-width: 900px) { 
+
+    .services .contentServices{
+        margin: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+    }
+    
+    .services .contentServices .ui-ux{
+        width: 100%;
+        border-radius: 10px;
+        background-image: url(../../assets/portfolio-single-title-img-1.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px 0;
+    }
+
+}
