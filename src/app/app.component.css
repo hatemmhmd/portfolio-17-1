@@ -112,3 +112,12 @@
     }
 
 }
+
+
+
+@media(max-width:500px) {
+    .navBar{
+        padding: 0 20px;
+    }
+    
+}

@@ -79,3 +79,11 @@
     }
     
 }
+
+
+@media(max-width:500px) {
+    .home{
+        padding: 0 15px;
+    }
+
+}

@@ -92,12 +92,14 @@
     
     .services .contentServices .ui-ux{
         width: 100%;
-        border-radius: 10px;
-        background-image: url(../../assets/portfolio-single-title-img-1.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
         margin: 10px 0;
     }
 
+}
+
+
+@media(max-width:500px) {
+    .services {
+        padding: 50px 15px;
+    }
 }
