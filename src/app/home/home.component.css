@@ -31,6 +31,12 @@
     border: solid 2px rgb(255, 255, 254);
 }
 
+.home .cv-btn:hover {
+    background-color: grey;
+    border: none
+}
+
+
 .home .cv-btn p{
     font-size: 30px;
     letter-spacing: 3px;
@@ -86,4 +92,20 @@
         padding: 0 15px;
     }
 
+}
+
+
+@media (hover: hover) and (pointer: fine) {
+    .home .cv-btn:hover {
+        background-color: grey;
+        border: none;
+    }
+}
+
+/* Active for touch devices */
+@media (hover: none) and (pointer: coarse) {
+    .home .cv-btn:active {
+        background-color: grey;
+        border: none;
+    }
 }

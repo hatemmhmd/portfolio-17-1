@@ -59,7 +59,7 @@
 .services .contentServices .ui-ux .content p:nth-child(1)
 {
     color: #f1cc9f;
-    font-weight: 800;
+    font-weight: 500;
     padding: 10px 20px;
 
 }
@@ -67,7 +67,7 @@
 .services .contentServices .ui-ux .content p:nth-child(2)
 {
     color: gray;
-    font-weight: 800;
+    font-weight: 300;
     padding: 10px 20px;
 }
 

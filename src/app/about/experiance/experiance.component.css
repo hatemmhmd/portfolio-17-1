@@ -139,7 +139,6 @@
 }
 
 .resume-area .item p{
-    font-weight: 800;
     color: #f1cc9f;
     font-size: 23px;
 }
@@ -336,5 +335,10 @@
 
 
 
-
+@media(max-width:500px) {
+    .circle .yearofexperiance p{
+        font-size: 19px;
+    }
+    
+}
 
