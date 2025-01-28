@@ -1,0 +1,139 @@
+.skills {
+    padding: 50px;
+    /* background-image: url(../../assets/810.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.skills .sectionName p {
+    font-size: 55px;
+    letter-spacing: 2px;
+    color: grey;
+    font-weight: bold;
+    position: relative;
+}
+
+.skills .sectionName p::after {
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    left: 0;
+}
+
+
+
+.skills .marqueeSkills {
+    margin: 50px 0;
+}
+
+
+.marquee {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.marquee-content {
+    cursor: pointer;
+    display: flex;
+    animation: marque 30s linear infinite running;
+}
+
+
+.marquee-content-icon {
+    cursor: pointer;
+    display: flex;
+    animation: iconmarque 30s linear infinite running;
+}
+
+
+/* .marquee-tag .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.marquee-tag .icon span {
+    font-size: 25px;
+    text-transform: capitalize;
+    transition: 0.3s linear;
+    letter-spacing: 2px;
+    color: black;
+}
+
+.icon i {
+    font-size: 45px;
+    margin: 10px;
+    transition: 0.3s linear;
+    color: black;
+}
+
+
+.marquee-content:hover,
+.marquee-content-icon:hover {
+    animation-play-state: paused;
+    transition: 0.3s linear;
+}
+
+
+.marquee-tag {
+    width: 130px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 50px;
+    padding: 5px 2px;
+    transition: 1s;
+}
+
+
+.marquee-tag .icon:hover i,
+.marquee-tag .icon:hover span {
+    color: #9e9e9e;
+    transition: 0.3s linear;
+}
+
+
+
+
+@keyframes marque {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes iconmarque {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+
+
+
+
+
+
+@media(max-width:500px) {
+    .services {
+        padding: 50px 15px;
+    }
+}
