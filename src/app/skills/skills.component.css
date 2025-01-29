@@ -26,6 +26,16 @@
 }
 
 
+.skills .parentSkills{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills .parentSkills .image img{
+    width: 500px;
+}
+
 
 .skills .marqueeSkills {
     margin: 50px 0;
@@ -33,7 +43,7 @@
 
 
 .marquee {
-    width: 100%;
+    width: 50%;
     box-sizing: border-box;
     padding: 10px;
     display: flex;
