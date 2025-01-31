@@ -1,26 +1,21 @@
-<div class="navBar">
-  <div class="logo"> 
-    <p> hatem </p>
-    <span> <i class="fa-solid fa-cubes"></i> </span>
-  </div>
+<div class="navBar" [ngClass]="showNavBar() ? 'bg' : ''">
+    <div class="logo">
+        <p> hatem </p>
+    </div>
 
-  <div class="list" *ngIf="showMenu" 
-    [ngClass]="showMenu ? 'showMenu' : ''">
-    <ul>
-      <li>home</li>
-      <li>about</li>
-      <li>services</li>
-      <li>skills</li>
-      <li>contact</li>
-    </ul>
-  </div>
-
-  <div class="burgerMenu" (click)="onShowMenuBtn()">
-    <div [ngClass]="showMenu? 'ifShowOpen' : ''"></div>
-    <div></div>
-  </div>
-
+    <div class="burgerMenu" (click)="onClickMenu()">
+            <div [ngClass]="showMenu? 'ifShowOpen' : ''"></div>
+            <div></div>
+    </div>
 </div>
+
+
+<div class="scrollToTop" *ngIf="onscroll()" (click)="scrollTop()">
+    <i class="fas fa-arrow-up"></i>
+</div>
+
+
+<app-menu [clickMenu]="showMenu" (viewMenu)="getMenuStatus($event)"> </app-menu>
 
 
 <app-home></app-home>
@@ -31,4 +26,5 @@
 
 
 <app-contact> </app-contact>
+
 

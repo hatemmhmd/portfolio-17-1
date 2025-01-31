@@ -12,10 +12,15 @@
 
 
 .home .text p{
-    font-size: 100px;
-    font-weight: bold;
+    font-size: 110px;
     letter-spacing: 2px;
     color: white;
+
+    color: #fff0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    line-height: 70px;
 }
 
 .home .cv-btn {
@@ -71,7 +76,7 @@
     
     
     .home .text p{
-        font-size: 90px;
+        font-size: 80px;
     }
     
     .home .cv-btn {

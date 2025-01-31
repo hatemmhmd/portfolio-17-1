@@ -1,6 +1,6 @@
 .contact{
     padding: 50px;
-    background-color: black;
+    background-color: #3D3F4A;
 }
 
 .contact .sectionName p{
@@ -59,11 +59,11 @@
 }
 
 .conentparent .socalmedia ul li:hover a i{
-    transition: 0.4s linear;
+    transition: 0.2s linear;
 }
 
 .conentparent .socalmedia ul li:hover a i{
-    color: gray;
+    color: #1A1D29 !important;;
 }
 
 .conentparent .rightside{
