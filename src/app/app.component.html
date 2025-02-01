@@ -15,16 +15,19 @@
 </div>
 
 
-<app-menu [clickMenu]="showMenu" (viewMenu)="getMenuStatus($event)"> </app-menu>
+<app-menu [clickMenu]="showMenu" 
+(viewMenu)="getMenuStatus($event)"
+(scrollsection)="getSection($event)"
+> </app-menu>
 
 
-<app-home></app-home>
-<app-about></app-about>
-<app-services> </app-services>
+<app-home id="Home"></app-home>
+<app-about id="About"></app-about>
+<app-services id="Services"> </app-services>
 
 <!-- <app-skills> </app-skills> -->
 
 
-<app-contact> </app-contact>
+<app-contact id="Contect"> </app-contact>
 
 

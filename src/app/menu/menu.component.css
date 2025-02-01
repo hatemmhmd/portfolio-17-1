@@ -239,5 +239,12 @@
         margin-top: 20px;
     }
     
+    .menu .sub-menu .links ul li a i{
+        font-size: 30px;
+    }
+
+    .menu .sub-menu .list ul li {
+        font-size: 30px;
+    }
 
 }

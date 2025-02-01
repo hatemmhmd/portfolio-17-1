@@ -12,9 +12,12 @@ export class MenuComponent {
 
   @Input() clickMenu : boolean | undefined; 
   @Output() viewMenu = new EventEmitter<boolean>();
+  @Output() scrollsection = new EventEmitter<string>();
 
-  onListMenu(){
+
+  onListMenu(section : string) {
     this.viewMenu.emit(this.clickMenu);
+    this.scrollsection.emit(section);
   }
 
 }

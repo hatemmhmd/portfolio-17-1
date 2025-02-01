@@ -18,21 +18,35 @@ import { MenuComponent } from "./menu/menu.component";
 })
 export class AppComponent implements OnInit {
 
-  showMenu : boolean = false;
+  showMenu: boolean = false;
+  styleBody = document.getElementsByTagName('body')[0];
 
   ngOnInit() {
     AOS.init();
   }
- 
-  onClickMenu(){
-    this.showMenu = !this.showMenu
+
+  onClickMenu() {
+    this.showMenu = !this.showMenu;
+    if (this.showMenu) {
+      this.styleBody.style.overflow = "hidden";
+    }
+    else {
+      this.styleBody.style.overflow = "auto";
+    }
   }
 
-  getMenuStatus(data : boolean){
+  getMenuStatus(data: boolean) {
     this.showMenu = !data;
   }
 
-  scrollTop(){
+  getSection(data: string) {
+    var sectionId = document.getElementById(data);
+    sectionId?.scrollIntoView({ behavior: 'smooth' });
+    this.styleBody.style.overflow = "auto";
+  }
+
+
+  scrollTop() {
     window.scrollTo({
       behavior: 'smooth',
       top: 0
@@ -40,20 +54,20 @@ export class AppComponent implements OnInit {
   }
 
   @HostListener('window:scroll', [])
-  onscroll() : any{
-    if(window.scrollY > 600){
-      return true; 
+  onscroll(): any {
+    if (window.scrollY > 600) {
+      return true;
+    }
+    return false;
   }
-  return false;
-}
 
-@HostListener('window:scroll', [])
-showNavBar() : any{
-  if(window.scrollY > 200){
-    return true; 
-}
-  return false;
-}
+  @HostListener('window:scroll', [])
+  showNavBar(): any {
+    if (window.scrollY > 200) {
+      return true;
+    }
+    return false;
+  }
 
 
 
