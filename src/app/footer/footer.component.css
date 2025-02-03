@@ -1,0 +1,33 @@
+.footer {
+    background-image: url('../../assets/portfolio-single-title-img-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer span,
+.footer span i {
+    color: #3D3F4A;
+    font-size: 20px;
+}
+
+
+
+@media(max-width:500px) {
+    .footer {
+        padding: 25px 10px;
+    }
+
+
+    .footer span,
+    .footer span i {
+        color: #3D3F4A;
+        font-size: 15px;
+    }
+
+
+}

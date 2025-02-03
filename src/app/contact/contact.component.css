@@ -112,6 +112,19 @@
 }
 
 
+@media(max-width:700px) {
+
+    .contact{
+        padding: 50px 15px;
+    }
+
+
+    .contact .conentparent{
+        grid-template-columns:1fr;   
+        margin: 50px 0;
+    }
+}
+
 
 @media(max-width:500px) {
 
@@ -123,5 +136,10 @@
     .contact .conentparent{
         grid-template-columns:1fr;   
         margin: 50px 0;
+    }
+
+    .conentparent .rightside h3{
+        font-size: 53px;
+        line-height: 70px;
     }
 }

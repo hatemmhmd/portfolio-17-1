@@ -1,6 +1,7 @@
 <div class="navBar" [ngClass]="showNavBar() ? 'bg' : ''">
     <div class="logo">
-        <p> hatem </p>
+        <p> hatem</p>
+        <i class="fa-brands fa-connectdevelop"></i>
     </div>
 
     <div class="burgerMenu" (click)="onClickMenu()">
@@ -8,6 +9,7 @@
             <div></div>
     </div>
 </div>
+
 
 
 <div class="scrollToTop" *ngIf="onscroll()" (click)="scrollTop()">
@@ -31,3 +33,4 @@
 <app-contact id="Contect"> </app-contact>
 
 
+<app-footer> </app-footer>
