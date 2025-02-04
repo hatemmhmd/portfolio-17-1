@@ -8,22 +8,19 @@
 }
 
 body{
-    /* background-image: url('./assets/GRADIENT-DRIVE.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     height: 100%;
-
     background-color: #1A1D29;
 }
 
 .sectionColor{
     color: #B1B2B5 !important;
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
 }
 
 
 .sectionColor::after{
-    background-color: #B1B2B5 !important;
+    background-color: #f1cc9f !important;
 }
 
 

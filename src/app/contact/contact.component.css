@@ -122,6 +122,7 @@
     .contact .conentparent{
         grid-template-columns:1fr;   
         margin: 50px 0;
+        margin-bottom: 0;
     }
 }
 
@@ -136,10 +137,11 @@
     .contact .conentparent{
         grid-template-columns:1fr;   
         margin: 50px 0;
+        margin-bottom: 0;
     }
 
     .conentparent .rightside h3{
-        font-size: 53px;
+        font-size: 60px;
         line-height: 70px;
     }
 }
