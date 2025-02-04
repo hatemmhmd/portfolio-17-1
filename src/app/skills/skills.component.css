@@ -112,7 +112,7 @@
 .marquee-tag {
     width: auto;
     text-align: center;
-    margin: 0 50px;
+    margin: 0 10px;
     padding: 5px 20px;
     transition: 1s;
 }
