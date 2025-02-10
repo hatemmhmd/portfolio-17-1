@@ -9,11 +9,12 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { MenuComponent } from "./menu/menu.component";
 import { FooterComponent } from "./footer/footer.component";
+import { ProjectsComponent } from "./projects/projects.component";
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet, HomeComponent, NgIf, NgClass,
-    AboutComponent, ServicesComponent, SkillsComponent, ContactComponent, MenuComponent, FooterComponent],
+    AboutComponent, ServicesComponent, SkillsComponent, ContactComponent, MenuComponent, FooterComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })

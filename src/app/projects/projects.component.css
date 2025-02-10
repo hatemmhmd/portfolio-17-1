@@ -1,0 +1,161 @@
+.projects {
+    padding: 50px;
+    background-color: #3D3F4A;
+}
+
+.projects .sectionName p{
+    font-size: 55px;
+    letter-spacing: 2px;
+    color: grey;
+    font-weight: bold;
+    position: relative;
+}
+
+.projects .sectionName p::after{
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    width: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    left: 0;
+}
+
+.projects .contentProject{
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+
+.projects .contentProject .content{
+    background-color: #B1B2B5 !important;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+
+/* .projects .contentProject .content::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 70px;
+    top: 0;
+    height: 70px;
+    background-color: #B1B2B5;
+    right: 0;
+    border-radius: 0px 20px 0px 10px;
+} */
+
+.projects .contentProject .content .forImage{
+    overflow: hidden;
+    border-radius: 20px 20px 0 0 ;
+}
+
+.projects .contentProject .content .forImage:hover.forImage div{
+    transform: scale(1.1);
+}
+
+.projects .contentProject .content:nth-child(1) .forImage div{
+    background-image: url(../../assets/adidas.jpeg);
+}
+
+
+.projects .contentProject .content:nth-child(2) .forImage div{
+    background-image: url(../../assets/room.jpg);
+}
+
+.projects .contentProject .content:nth-child(3) .forImage div{
+    background-image: url(../../assets/gym.png);
+}
+
+
+.projects .contentProject .content:nth-child(4) .forImage div{
+    background-image: url(../../assets/paris.jpg);
+}
+
+
+.projects .contentProject .content:nth-child(5) .forImage div{
+    background-image: url(../../assets/featured-02.jpg);
+}
+
+
+.projects .contentProject .content:nth-child(6) .forImage div{
+    background-image: url(../../assets/schooler.jpg);
+}
+
+
+.projects .contentProject .content:nth-child(1) .forImage div,
+.projects .contentProject .content:nth-child(2) .forImage div,
+.projects .contentProject .content:nth-child(3) .forImage div,
+.projects .contentProject .content:nth-child(4) .forImage div,
+.projects .contentProject .content:nth-child(5) .forImage div,
+.projects .contentProject .content:nth-child(6) .forImage div{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* width: 400px; */
+    height:275px;
+    border-radius: 20px 20px 0 0 ;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+
+
+
+.projects .contentProject .content .forName{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding:20px;
+}
+
+
+.projects .contentProject .content .forName i{
+    transition: 0.3s linear;
+}
+
+
+
+
+
+
+.projects .contentProject .content:hover.content .forName i{
+ transform: rotate(45deg);   
+}
+
+
+
+@media(max-width:900px) {
+    .projects .contentProject{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+
+
+
+@media(max-width:650px) {
+    .projects .contentProject{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .projects {
+        padding: 50px 15px;
+    }
+}
+
+
+
+@media(max-width:500px) {
+    .projects {
+        padding: 50px 15px;
+    }
+}
+
