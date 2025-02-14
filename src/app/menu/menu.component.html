@@ -3,19 +3,46 @@
         <div class="list">
             <ul>
                 <li 
+                    (click)="onListMenu('Home')"
                     (touchstart)="isHovering = true"
-                    (touchend)="isHovering = false"
-                    [ngClass]="isHovering ? 'bg' : ''"
-                > 
-                    <a (click)="onListMenu('Home')"> home </a>  </li>
+                    (touchend)="isHovering = false"> 
+                    <a> home </a>  
+                </li>
 
+                <li 
+                    (click)="onListMenu('About')"
+                    (touchstart)="isHovering = true"
+                    (touchend)="isHovering = false"> 
+                    <a> about me </a> 
+                </li>
 
+                <li 
+                    (click)="onListMenu('Services')"
+                    (touchstart)="isHovering = true"
+                    (touchend)="isHovering = false"> 
+                    <a> services </a> 
+                </li>
 
-                <li > <a (click)="onListMenu('About')"> about me </a> </li>
-                <li > <a (click)="onListMenu('Services')"> services </a> </li>
-                <li > <a (click)="onListMenu('Skills')"> skills </a> </li>
-                <li > <a (click)="onListMenu('Projects')"> projects </a> </li>
-                <li > <a (click)="onListMenu('Contect')"> contect </a> </li>
+                <li 
+                    (click)="onListMenu('Skills')"
+                    (touchstart)="isHovering = true"
+                    (touchend)="isHovering = false"> 
+                    <a> skills </a> 
+                </li>
+
+                <li 
+                    (click)="onListMenu('Projects')"
+                    (touchstart)="isHovering = true"
+                    (touchend)="isHovering = false"> 
+                    <a> projects </a> 
+                </li>
+
+                <li 
+                    (click)="onListMenu('Contect')"
+                    (touchstart)="isHovering = true"
+                    (touchend)="isHovering = false"> 
+                    <a> contect </a> 
+                </li>
             </ul>
         </div>
 
