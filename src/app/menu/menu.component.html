@@ -2,12 +2,20 @@
     <div class="sub-menu">
         <div class="list">
             <ul>
-                <li (click)="onListMenu('Home')"> <a> home </a>  </li>
-                <li (click)="onListMenu('About')"> <a> about me </a> </li>
-                <li (click)="onListMenu('Services')"> <a> services </a> </li>
-                <li (click)="onListMenu('Skills')"> <a> skills </a> </li>
-                <li (click)="onListMenu('Projects')"> <a> projects </a> </li>
-                <li (click)="onListMenu('Contect')"> <a> contect </a> </li>
+                <li 
+                    (touchstart)="isHovering = true"
+                    (touchend)="isHovering = false"
+                    [ngClass]="isHovering ? 'bg' : ''"
+                > 
+                    <a (click)="onListMenu('Home')"> home </a>  </li>
+
+
+
+                <li > <a (click)="onListMenu('About')"> about me </a> </li>
+                <li > <a (click)="onListMenu('Services')"> services </a> </li>
+                <li > <a (click)="onListMenu('Skills')"> skills </a> </li>
+                <li > <a (click)="onListMenu('Projects')"> projects </a> </li>
+                <li > <a (click)="onListMenu('Contect')"> contect </a> </li>
             </ul>
         </div>
 
