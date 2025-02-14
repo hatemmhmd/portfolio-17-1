@@ -3,10 +3,12 @@
         <div class="list">
             <ul>
                 <li 
-                    (click)="onListMenu('Home')"
-                    (touchstart)="isHovering = true"
-                    (touchend)="isHovering = false"> 
-                    <a> home </a>  
+                    (click)="onListMenu('Home')"> 
+                    <a 
+                        (touchstart)="isHovering = true"
+                        (touchend)="isHovering = false">
+                        home 
+                    </a>  
                 </li>
 
                 <li 
