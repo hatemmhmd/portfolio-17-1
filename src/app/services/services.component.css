@@ -38,12 +38,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px 0;
+    cursor: pointer;
 }
+
+
 
 .services .contentServices .ui-ux i{
     font-size: 40px;
     margin: 20px 0;
-
 }
 
 .services .contentServices .ui-ux .content
@@ -75,6 +77,8 @@
 {
     margin: 10px 0;
 }
+
+
 
 
 

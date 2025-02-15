@@ -148,6 +148,15 @@
     transform: translateY(0); 
 }
 
+.menu .sub-menu .links ul li:hover a i{
+    transition: 0.2s linear;
+}
+
+
+.menu .sub-menu .links ul li:hover a i{
+    color: #f1cc9f  !important;;
+}
+
 
 
 .menu .sub-menu .links ul li a i{
@@ -248,8 +257,8 @@
         font-size: 30px;
     }
 
-}
+    .menu .sub-menu .list{
+        margin: 40px 0;
+    }
 
-.bg{
-    background-color: red !important;
 }

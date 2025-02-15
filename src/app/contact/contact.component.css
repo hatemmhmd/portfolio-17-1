@@ -63,7 +63,7 @@
 }
 
 .conentparent .socalmedia ul li:hover a i{
-    color: #1A1D29 !important;;
+    color: #f1cc9f  !important;;
 }
 
 .conentparent .rightside{
@@ -130,7 +130,7 @@
 @media(max-width:500px) {
 
     .contact{
-        padding: 50px 15px;
+        padding: 0px 15px;
     }
 
 

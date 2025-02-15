@@ -15,7 +15,6 @@
     font-size: 110px;
     letter-spacing: 2px;
     color: white;
-
     color: #fff0;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff;
@@ -89,6 +88,16 @@
 @media(max-width:500px) {
     .home{
         padding: 0 15px;
+    }
+
+
+    .home .text{
+        margin: 70px 0;
+    }
+    
+
+    .home .text p{
+        line-height: 55px;
     }
 
 }
