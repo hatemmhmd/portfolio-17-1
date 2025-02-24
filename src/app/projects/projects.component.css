@@ -3,7 +3,7 @@
     background-color: #3D3F4A;
 }
 
-.projects .sectionName p{
+.projects .sectionName p {
     font-size: 55px;
     letter-spacing: 2px;
     color: grey;
@@ -11,7 +11,7 @@
     position: relative;
 }
 
-.projects .sectionName p::after{
+.projects .sectionName p::after {
     content: "";
     display: block;
     height: 5px;
@@ -22,126 +22,20 @@
     left: 0;
 }
 
-.projects .contentProject{
-    margin: 50px 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-}
-
-
-.projects .contentProject .content{
-    background-color: #B1B2B5 !important;
-    border-radius: 20px;
-    margin-bottom: 30px;
-    position: relative;
-}
-
-
-/* .projects .contentProject .content::after{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 70px;
-    top: 0;
-    height: 70px;
-    background-color: #B1B2B5;
-    right: 0;
-    border-radius: 0px 20px 0px 10px;
-} */
-
-.projects .contentProject .content .forImage{
-    overflow: hidden;
-    border-radius: 20px 20px 0 0 ;
-}
-
-.projects .contentProject .content .forImage:hover.forImage div{
-    transform: scale(1.1);
-}
-
-.projects .contentProject .content:nth-child(1) .forImage div{
-    background-image: url(../../assets/adidas.jpeg);
-}
-
-
-.projects .contentProject .content:nth-child(2) .forImage div{
-    background-image: url(../../assets/room.jpg);
-}
-
-.projects .contentProject .content:nth-child(3) .forImage div{
-    background-image: url(../../assets/gym.png);
-}
-
-
-.projects .contentProject .content:nth-child(4) .forImage div{
-    background-image: url(../../assets/paris.jpg);
-}
-
-
-.projects .contentProject .content:nth-child(5) .forImage div{
-    background-image: url(../../assets/featured-02.jpg);
-}
-
-
-.projects .contentProject .content:nth-child(6) .forImage div{
-    background-image: url(../../assets/schooler.jpg);
-}
-
-
-.projects .contentProject .content:nth-child(1) .forImage div,
-.projects .contentProject .content:nth-child(2) .forImage div,
-.projects .contentProject .content:nth-child(3) .forImage div,
-.projects .contentProject .content:nth-child(4) .forImage div,
-.projects .contentProject .content:nth-child(5) .forImage div,
-.projects .contentProject .content:nth-child(6) .forImage div{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* width: 400px; */
-    height:275px;
-    border-radius: 20px 20px 0 0 ;
-    cursor: pointer;
-    transition: 0.3s linear;
-}
 
 
 
-.projects .contentProject .content .forName{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 25px;
-    letter-spacing: 2px;
-    padding:20px;
-}
-
-
-.projects .contentProject .content .forName i{
-    transition: 0.3s linear;
-}
-
-
-
-
-
-
-.projects .contentProject .content:hover.content .forName i{
- transform: rotate(45deg);   
-}
-
-
-
-@media(max-width:900px) {
+/* @media(max-width:900px) {
     .projects .contentProject{
         grid-template-columns: repeat(2, 1fr);
     }
     
-}
+} */
 
 
 
 
-@media(max-width:650px) {
+/* @media(max-width:650px) {
     .projects .contentProject{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -149,13 +43,212 @@
     .projects {
         padding: 50px 15px;
     }
+} */
+
+
+
+/* @media(max-width:500px) {
+    .projects {
+        padding: 50px 15px;
+    }
+} */
+
+
+
+.projects .allProjects {
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.allProjects .adidas-parent,
+.allProjects .design-parent,
+.allProjects .fitness-parent,
+.allProjects .trip-parent,
+.allProjects .snap-parent {
+    width: 100%;
+}
+
+.design-parent,
+.trip-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.adidas,
+.design,
+.fitness,
+.trip,
+.snap {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 275px;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.3s linear;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+
+.adidas {
+    background-image: url(../../assets/adidas.jpeg);
+}
+
+.design {
+    background-image: url(../../assets/room.jpg);
+}
+
+
+.fitness {
+    background-image: url(../../assets/gym.png);
+}
+
+
+.trip {
+    background-image: url(../../assets/paris.jpg);
+}
+
+
+.snap {
+    background-image: url(../../assets/featured-02.jpg);
+}
+
+
+.adidas .desc,
+.design .desc,
+.fitness .desc,
+.trip .desc,
+.snap .desc {
+    background-color: black;
+    padding: 10px 15px;
+    height: 150px;
+    width: 350px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: self-start;
+    top: 50%;
+    right: -270px;
+    /* transform: translateY(-50%); */
+}
+
+
+.desc span {
+    font-size: 55px;
+    letter-spacing: 3px;
+    letter-spacing: 2px;
+    color: white;
+    color: #fff0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    line-height: 70px;
+}
+
+.desc .view {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 20px;
+}
+
+.desc .view i {
+    margin: 0 20px;
 }
 
 
 
-@media(max-width:500px) {
+
+
+@media(max-width : 1000px) {
+    .adidas,
+    .design,
+    .fitness,
+    .trip,
+    .snap {
+        width: 70%;
+    }
+
+
+    .adidas .desc,
+    .design .desc,
+    .fitness .desc,
+    .trip .desc,
+    .snap .desc {
+        width: 285px;
+        right: -150px;
+    }
+}
+
+
+
+@media(max-width : 800px) {
+    .adidas,
+    .design,
+    .fitness,
+    .trip,
+    .snap {
+        width: 70%;
+    }
+
+
+    .adidas .desc,
+    .design .desc,
+    .fitness .desc,
+    .trip .desc,
+    .snap .desc {
+        width: 275px;
+        right: -130px;
+    }
+}
+
+
+
+@media(max-width : 730px) {
+    .adidas,
+    .design,
+    .fitness,
+    .trip,
+    .snap {
+        width: 100%;
+    }
+
+
+    .adidas .desc,
+    .design .desc,
+    .fitness .desc,
+    .trip .desc,
+    .snap .desc {
+        width: 270px;
+        right: -35px;
+    }
+}
+
+
+
+
+
+
+@media(max-width : 500px) {
     .projects {
         padding: 50px 15px;
+    }
+
+
+    .adidas .desc,
+    .design .desc,
+    .fitness .desc,
+    .trip .desc,
+    .snap .desc {
+        width: 215px;
+        right: -10px;
     }
 }
 
