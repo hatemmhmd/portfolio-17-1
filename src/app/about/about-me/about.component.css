@@ -37,6 +37,14 @@
 
 .about .content .content-left p{
     font-size: 100px;
+    transition: 0.3s linear;
+}
+
+.about .content .content-left p:hover{
+    color: white;
+    color: #fff0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
 }
 
 
